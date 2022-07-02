@@ -1,0 +1,10 @@
+.team:hover{
+    
+    opacity: 50%;
+}
+.team{
+    background-color: green;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+}

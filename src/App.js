@@ -7,6 +7,7 @@ import CreateBet from './components/CreateBet/CreateBet';
 import Team from './components/Team/Team';
 import TeamList from './components/TeamList/TeamList';
 import CreateTeam from './components/CreateTeam/CreateTeam';
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   const [bets, setBets] = React.useState([
@@ -44,6 +45,7 @@ const App = () => {
           "create_team": <CreateTeam addTeam={addTeam} />,
         }[component]
       }
+      <Footer />
     </div>
   );
 }

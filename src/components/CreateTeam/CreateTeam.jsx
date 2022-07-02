@@ -13,7 +13,8 @@ function CreateTeam(props) {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        props.addTeam(<Team name={inputs.name} logo={inputs.logo} bets={[]} />)        
+        props.addTeam(<Team name={inputs.name} logo={inputs.logo} bets={[]} />);
+        alert("Team created");        
     }
 
     return (
