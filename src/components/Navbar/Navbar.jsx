@@ -1,8 +1,8 @@
 import "./Navbar.css"
 
-export default function Navbar(props){
+export default function Navbar({ component, changeComponent }) {
     const change = (event) => {
-        props.component(event.target.name)        
+        changeComponent(event.target.name);
     }
 
     return (

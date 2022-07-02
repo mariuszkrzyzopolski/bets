@@ -12,8 +12,10 @@ function CreateBet(props) {
     }
 
     const handleSubmit = (event) => {
-        event.preventDefault()
-        props.addBets(<Bet team1={inputs.team1} team2={inputs.team2} team1bet={inputs.team1bet} team2bet={inputs.team2bet} draw={inputs.draw} />)        
+        event.preventDefault();
+        let bet = <Bet team1={inputs.team1} team2={inputs.team2} team1bet={inputs.team1bet} team2bet={inputs.team2bet} draw={inputs.draw} />
+        props.addBets(bet);
+        alert("bet created");
     }
 
     return (
